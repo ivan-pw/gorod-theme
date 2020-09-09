@@ -1,0 +1,530 @@
+@import 'custom';
+@import 'fonts';
+@import 'fluid-type';
+@import '~bootstrap/scss/bootstrap';
+@import '~lightbox2/dist/css/lightbox.css';
+//@import './../../fonts/font-awesome/css/all.min.css';
+
+@import '~swiper/swiper-bundle.css';
+
+.btn {
+  @include fluid-type(16px, 18px);
+
+  &-default {
+    border-radius: 15px;
+    background-color: $red;
+    height: 100px;
+    padding: 0 70px;
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+
+    &:hover {
+      background-color: rgba($red, 0.8);
+    }
+  }
+
+  &-download {
+    display: inline-block;
+    width: 140px;
+    padding-left: 0;
+    padding-right: 0;
+    background: $red url(../../img/download.svg) no-repeat center center;
+    background-size: 40%;
+  }
+}
+
+h2 {
+  color: $gray;
+  @include fluid-type(26px, 48px);
+  margin: 1em 0 0.5em;
+  display: flex;
+  align-items: flex-end;
+  white-space: nowrap;
+  font-weight: bold;
+
+  &:after {
+    content: '';
+    display: inline;
+    height: 3px;
+    background: $red;
+    width: 100%;
+    margin-left: 1em;
+    margin-bottom: 0.55em;
+  }
+}
+
+body {
+  background-color: unset;
+  background: url(../../img/eggs1.svg) no-repeat -10% 100vh / cover,
+    linear-gradient(222.07deg, #c4c4c4 -17.13%, $light-gray 53.51%);
+
+  background-size: 120%;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  color: $gray;
+  @include fluid-type(16px, 18px);
+
+  &.home {
+    header {
+      background: url(../../img/home-bg.png) no-repeat center center / cover;
+      min-height: 90vh;
+      padding-bottom: 75px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: inherit;
+      height: 100%;
+
+      nav {
+        ul#menu-top-menu {
+          li {
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-weight: bold;
+        color: #fff;
+        padding: 1em 0;
+        @include fluid-type(36px, 120px);
+      }
+
+      p {
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &.page-template-default {
+    background: url(../../img/eggs1.svg) no-repeat top left / cover,
+      linear-gradient(222.07deg, #c4c4c4 -17.13%, $light-gray 53.51%);
+
+    article {
+      h2 {
+        margin-top: 1.4em;
+        margin-bottom: 1.2em;
+      }
+
+      h1 {
+        @extend h2;
+      }
+
+      p {
+        @include fluid-type(16px, 24px);
+        line-height: 2em;
+        padding: 0.5em 0 1.5em;
+      }
+    }
+  }
+}
+
+header {
+  padding-top: 100px;
+
+  nav {
+    .gohome {
+      @extend .btn-default;
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+      padding: 0 0px;
+    }
+
+    ul#menu-top-menu {
+      height: 100%;
+      display: flex;
+      justify-content: normal;
+      flex-direction: row;
+      align-items: center;
+
+      li {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        a {
+          color: $gray;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding-top: 25px;
+  padding-bottom: 75px;
+}
+
+.front-icon {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  background-size: 70%;
+  filter: drop-shadow(-25px 25px 150px rgba(0, 0, 0, 0.1));
+
+  & + p {
+    @include fluid-type(14px, 16px);
+    margin: 40px 25px 40px 0;
+    text-align: left;
+    display: flex;
+    font-weight: 600;
+
+    &:before {
+      content: url(../../img/arrow-red.svg);
+      display: inline-block;
+      margin-right: 25px;
+    }
+  }
+}
+
+.panel {
+  &-image {
+    width: 100%;
+    height: 100%;
+    background: $light-gray;
+    border-radius: 15px;
+    box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
+  }
+  &-v1 {
+    border-radius: 15px;
+    background: $light-gray;
+    box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
+
+    &__part2 {
+      margin-top: -15px;
+      z-index: -1;
+      position: relative;
+    }
+
+    .top {
+      background: $red;
+      text-align: center;
+      padding: 1em 10px;
+      border-radius: 15px 15px 0 0;
+      font-weight: bold;
+      color: #fff;
+      @include fluid-type(18px, 24px);
+    }
+
+    .bottom {
+      padding: 1.7em 30px 2em 30px;
+      font-weight: 600;
+      line-height: 2em;
+      position: relative;
+    }
+  }
+
+  &-v2 {
+    background: $light-gray;
+    padding: 32px 42px 57px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
+
+    &:after {
+      background: $red;
+      content: '';
+      width: 100%;
+      height: 25px;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+    }
+
+    &:nth-last-child(n + 2) {
+      padding-bottom: 107px;
+    }
+    &:nth-child(n + 2) {
+      margin-top: -100px;
+    }
+  }
+
+  &-v3 {
+    background: $light-gray;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
+
+    .top {
+      background: $red;
+      font-weight: bold;
+      text-align: center;
+      padding: 1em 0.5em;
+      color: #fff;
+      @include fluid-type(16px, 24px);
+    }
+
+    .image {
+      padding-top: 56%;
+    }
+
+    .bottom {
+      padding: 40px 30px 20px;
+      font-weight: 600;
+      max-height: 320px;
+      line-height: 1.8em;
+      transition: 0.5s all linear;
+      @include fluid-type(12px, 14px);
+
+      &.open {
+        max-height: 1500px;
+      }
+
+      p {
+        margin-bottom: 0;
+        @include fluid-type(12px, 14px);
+      }
+
+      span {
+        display: flex;
+        position: absolute;
+        width: calc(100% - 60px);
+        padding-bottom: 20px;
+        padding-top: 10px;
+        bottom: 0;
+        flex-direction: column;
+        text-align: center;
+        background: $light-gray;
+        cursor: pointer;
+
+        &:before {
+          content: 'Развернуть';
+          color: $red;
+        }
+        &:after {
+          content: url(../../img/arrow-3-down.svg);
+        }
+      }
+    }
+  }
+
+  &-v4 {
+    @extend .panel-v3;
+
+    .top {
+      font-weight: 600;
+      padding: 0.65em 0.5em;
+      @include fluid-type(16px, 18px);
+    }
+
+    .bottom {
+      padding: 30px 30px 70px;
+    }
+  }
+}
+
+a.more {
+  display: block;
+  text-align: right;
+  color: $red;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 0.4em;
+  right: 30px;
+  @include fluid-type(10px, 12px);
+
+  &:after {
+    content: url('../../img/arrow-3.svg');
+    margin-left: 7px;
+    position: relative;
+    bottom: -1px;
+  }
+}
+
+.blog-list {
+  &__item {
+    border-radius: 15px;
+    background: #fff;
+    height: 100%;
+
+    .image {
+      height: 280px;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .bottom {
+      font-weight: 600;
+      padding: 20px 30px 2em;
+      @include fluid-type(12px, 14px);
+
+      a.more {
+        bottom: 1em;
+      }
+    }
+  }
+}
+
+footer {
+  background: $green-gray;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.social-pages-links {
+  a {
+    display: inline-flex;
+    height: 35px;
+    width: 35px;
+    background: $red;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none !important;
+    margin-right: 40px;
+  }
+}
+
+.links-block {
+  padding-top: 80px;
+
+  .download-link {
+    font-weight: 600;
+    color: $gray;
+  }
+}
+
+.principles {
+  .principles-item + .principles-item {
+    margin-top: 50px;
+  }
+}
+
+.stages {
+  .stage-item {
+    margin-bottom: 50px;
+
+    &:nth-child(2n) {
+      .stage-text span {
+        right: 60px;
+      }
+    }
+
+    .num {
+      font-weight: 300;
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      color: $red;
+      border: 3px solid $red;
+      border-radius: 50%;
+      margin-bottom: 50px;
+
+      & + span {
+        display: block;
+        height: calc(100% - 160px);
+        position: relative;
+
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 12px;
+          text-align: center;
+          height: calc(100% - 100px);
+          background: $red;
+          width: 3px;
+          margin-left: calc(50% - 1.5px);
+        }
+
+        &:after {
+          content: url('../../img/small-arrow-down.svg');
+          position: absolute;
+          bottom: 0;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .stage-text {
+    background: $light-gray;
+    border-radius: 15px;
+    padding: 30px 30px 100px;
+    box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
+    max-height: 27em;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s max-height linear;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 70px;
+      bottom: 0;
+      left: 0;
+      background: $light-gray;
+      border-radius: 15px;
+      z-index: 0;
+    }
+
+    &.open {
+      max-height: 300em;
+      padding-bottom: 20px;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    h4 {
+      @include fluid-type(20px, 35px);
+      font-weight: bold;
+    }
+
+    p {
+      font-weight: 600;
+      padding-bottom: 0.8em;
+      @include fluid-type(16px, 24px);
+    }
+
+    span {
+      display: flex;
+      position: absolute;
+      width: calc(100% - 60px);
+      padding-bottom: 20px;
+      padding-top: 10px;
+      bottom: 0;
+      flex-direction: column;
+      text-align: center;
+      background: $light-gray;
+      cursor: pointer;
+      width: auto;
+      align-items: center;
+      z-index: 1;
+
+      &:before {
+        content: 'Развернуть';
+        color: $red;
+      }
+      &:after {
+        content: url(../../img/arrow-3-down.svg);
+      }
+    }
+  }
+}
