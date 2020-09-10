@@ -46,6 +46,10 @@ h2 {
   white-space: nowrap;
   font-weight: bold;
 
+  @include media-breakpoint-down(sm) {
+    white-space: normal;
+  }
+
   &:after {
     content: '';
     display: inline;
@@ -54,6 +58,10 @@ h2 {
     width: 100%;
     margin-left: 1em;
     margin-bottom: 0.55em;
+
+    @include media-breakpoint-down(sm) {
+      width: 30%;
+    }
   }
 }
 
@@ -123,7 +131,9 @@ body {
       p {
         @include fluid-type(16px, 24px);
         line-height: 2em;
-        padding: 0.5em 0 1.5em;
+        // padding: 0.5em 0 1.5em;
+
+        padding: 0.5em 0 1em;
       }
     }
   }
@@ -131,6 +141,10 @@ body {
 
 header {
   padding-top: 100px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 10px;
+  }
 
   nav {
     .gohome {
@@ -147,6 +161,11 @@ header {
       justify-content: normal;
       flex-direction: row;
       align-items: center;
+
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        justify-content: center;
+      }
 
       li {
         padding-left: 25px;
@@ -174,6 +193,13 @@ main {
   padding-top: 100%;
   background-size: 70%;
   filter: drop-shadow(-25px 25px 150px rgba(0, 0, 0, 0.1));
+
+  @include media-breakpoint-down(sm) {
+    width: 50%;
+    padding-top: 50%;
+    background-size: 70% !important;
+    margin: 0 auto;
+  }
 
   & + p {
     @include fluid-type(14px, 16px);
@@ -250,6 +276,10 @@ main {
     }
     &:nth-child(n + 2) {
       margin-top: -100px;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -259,6 +289,10 @@ main {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 1em;
+    }
 
     .top {
       background: $red;
@@ -388,6 +422,10 @@ footer {
     color: #fff;
     text-decoration: none !important;
     margin-right: 40px;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -397,6 +435,12 @@ footer {
   .download-link {
     font-weight: 600;
     color: $gray;
+  }
+
+  @include media-breakpoint-down(sm) {
+    & > div {
+      margin-bottom: 1em;
+    }
   }
 }
 
@@ -411,8 +455,14 @@ footer {
     margin-bottom: 50px;
 
     &:nth-child(2n) {
-      .stage-text span {
-        right: 60px;
+      .stage-text {
+        border-radius: 15px 0 0 15px;
+        border-right: 15px solid $red;
+        border-left: unset;
+
+        span {
+          right: 60px;
+        }
       }
     }
 
@@ -463,13 +513,16 @@ footer {
 
   .stage-text {
     background: $light-gray;
-    border-radius: 15px;
     padding: 30px 30px 100px;
     box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
     max-height: 27em;
     position: relative;
     overflow: hidden;
     transition: 0.5s max-height linear;
+
+    border-radius: 0 15px 15px 0;
+    border-right: unset;
+    border-left: 15px solid $red;
 
     &:after {
       content: '';
@@ -525,6 +578,192 @@ footer {
       &:after {
         content: url(../../img/arrow-3-down.svg);
       }
+    }
+  }
+}
+
+.process-stages {
+  &__item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
+    background: $light-gray;
+
+    & + & {
+      margin-top: 65px;
+    }
+
+    &.active {
+      .top {
+        color: $light-gray;
+        background: $red;
+      }
+    }
+
+    .top {
+      background: #c4c4c4;
+      font-weight: 600;
+      color: $light-gray;
+      padding: 30px;
+      text-align: center;
+      @include fluid-type(16px, 18px);
+    }
+
+    .bottom {
+      padding: 30px;
+      font-weight: 600;
+      @include fluid-type(16px, 24px);
+    }
+  }
+}
+
+.wpcf7 > form {
+  border-radius: 15px;
+  box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
+  background: $light-gray;
+  padding: 50px 30px;
+
+  label {
+    font-weight: 600;
+    margin-bottom: 2.5em;
+  }
+
+  .wpcf7-text,
+  .wpcf7-textarea {
+    width: 100%;
+    background: #e5e5e5;
+    border: 2px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1em;
+    outline: unset !important;
+
+    &:hover,
+    &:focus {
+      border: 2px solid $red;
+    }
+  }
+
+  .wpcf7-form-control-wrap {
+    margin-top: 1.5em;
+    display: block;
+  }
+
+  .wpcf7-submit {
+    margin: 0 auto;
+    padding: 10px 20%;
+    height: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    @include fluid-type(16px, 18px);
+
+    @include media-breakpoint-down(sm) {
+      padding: 10px 30px;
+      width: 100%;
+    }
+  }
+
+  .wpcf7-radio {
+    & > span {
+      display: block;
+      font-size: 12px;
+
+      label {
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 0.1em;
+
+        input[type='radio'] {
+          height: 1px;
+          width: 1px;
+          opacity: 0.01;
+
+          &:checked {
+            & + span:before {
+              background: $red;
+              border: 2px solid $red;
+            }
+          }
+
+          & + span {
+            display: flex;
+            align-items: center;
+
+            &:before {
+              content: '';
+              background: #e5e5e5;
+              border: 2px solid #c4c4c4;
+              box-sizing: border-box;
+              border-radius: 5px;
+              width: 25px;
+              height: 25px;
+              display: inline-block;
+              margin-right: 25px;
+              transition: 0.3s all linear;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.member {
+  background: #eeeeee;
+  box-shadow: -25px 25px 150px rgba(0, 0, 0, 0.1);
+
+  & + & {
+    margin-top: 50px;
+  }
+
+  img {
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+      font-weight: bold;
+      margin-bottom: 1em;
+      @include fluid-type(18px, 24px);
+    }
+
+    b {
+      font-weight: bold;
+    }
+  }
+}
+
+ul.red {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 2em;
+
+  li {
+    margin-bottom: 1em;
+    list-style-type: none;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: #f00;
+      border-radius: 50%;
+      left: -1.5em;
+      position: absolute;
+      top: 0.6em;
     }
   }
 }

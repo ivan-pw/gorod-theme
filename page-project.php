@@ -15,8 +15,7 @@
                 <div class="col-12">
                     <div class="">
                         <h1>
-                            <?=get_the_title();?> <br />
-                            Технология соучавствующих методов
+                            Как выглядит наш процесс <br /> с разработкой инициативы
                         </h1>
                     </div>
                 </div>
@@ -174,7 +173,7 @@
 
             <div class="row links-block">
                 <div class="col-12 col-md-4">
-                    <a href="/todo" class="btn btn-default">Что делать?</a>
+                    <a href="#" class="btn btn-default">Что делать?</a>
                 </div>
                 <div class="col-12 col-md-4 offset-md-4 d-flex align-items-center">
                     <a href="#" class="download-link">Скачать pdf с полной версией доклада</a>

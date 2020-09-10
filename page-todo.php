@@ -22,7 +22,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-8 offset-md-4">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/pages/todo/todo1.jpg" />
+                    <img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/img/pages/todo/todo1.jpg" />
                 </div>
                 <div class="panel panel-v2 col-12 col-md-8">
                     Для того, чтобы Москва развивалась и стала городом для людей, стала ближе к своим жителям, необходимо перестроить систему городского управления и внедрить соучаствующие методы в процесс принятия решений
@@ -217,7 +217,7 @@
             </div>
             <div class="row links-block">
                 <div class="col-12 col-md-4">
-                    <a href="#" class="btn btn-default">Как делать?</a>
+                    <a href="/howto" class="btn btn-default">Как делать?</a>
                 </div>
                 <div class="col-12 col-md-4 offset-md-4 d-flex align-items-center">
                     <a href="#" class="download-link">Скачать pdf с полной версией доклада</a>
