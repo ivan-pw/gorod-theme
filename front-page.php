@@ -31,7 +31,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-8">
-                    <div class="panel panel-v1 mr-5">
+                    <div class="panel panel-v1 panel-v1__part1 mr-md-5">
                         <div class="top">Как делать?</div>
                         <div class="bottom">Главное — это принципы включённости в процесс всех заинтересованных жителей и учёта их пожеланий, которые, как и технические аспекты, могут быть применены в любом
                             вопросе, затрагивающем интересы горожан
@@ -40,10 +40,12 @@
                     </div>
                 </div>
                 <div class="col-12 offset-md-4 col-md-8">
-                    <div class="panel panel-v1 panel-v1__part2 ml-5">
+                    <div class="panel panel-v1 panel-v1__part2 ml-md-5">
                         <div class="top">Что делать?</div>
-                        <div class="bottom">Для того, чтобы Москва развивалась и стала городом для людей, стала ближе к своим жителям, необходимо перестроить систему городского управления и внедрить соучаствующие методы в процесс принятия решений</div>
-                        <a href="/todo" class="more">Подробнее</a>
+                        <div class="bottom">Для того, чтобы Москва развивалась и стала городом для людей, стала ближе к своим жителям, необходимо перестроить систему городского управления и внедрить соучаствующие методы в процесс принятия решений
+
+                            <a href="/todo" class="more">Подробнее</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,7 +77,7 @@
                     // don't display the button if there are not enough posts
                     if ($wp_query->max_num_pages > 1) {
                         echo '
-                        <div class=" col-12 col-md-4 offset-md-4">
+                        <div class=" col-12 col-md-6 offset-md-3 mt-5">
                         <div class="btn btn-default misha_loadmore">Показать больше новостей</div>
                         </div>';
                     }

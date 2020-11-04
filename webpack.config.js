@@ -1,4 +1,5 @@
 const devMode = process.env.NODE_ENV !== 'production';
+// const devMode = process.env.NODE_ENV !== 'development';
 const path = require('path');
 const webpack = require('webpack');
 
@@ -20,10 +21,11 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: {sourceMap: true},
-          }, {
+            options: { sourceMap: true },
+          },
+          {
             loader: 'postcss-loader',
-            options: {sourceMap: true, config: {path: 'src/js/postcss.config.js'}},
+            options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } },
           },
         ],
       },
@@ -33,7 +35,8 @@ module.exports = {
           'style-loader',
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader', options: {
+            loader: 'css-loader',
+            options: {
               sourceMap: true,
               modules: false,
             },
@@ -57,10 +60,12 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {},
-        }],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
       },
     ],
   },

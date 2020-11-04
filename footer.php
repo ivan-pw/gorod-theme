@@ -15,6 +15,8 @@
 
 </footer>
 
+
+
 <script src="<?php echo get_template_directory_uri(); ?>/node_modules/share-buttons/dist/share-buttons.js?<?=time();?>"></script>
 
 <?php wp_footer();?>

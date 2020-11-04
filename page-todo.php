@@ -82,7 +82,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
-                        <div class="top">Как есть сейчас?</div>
+                        <div class="top">Как будет?</div>
                         <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/3.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
@@ -94,12 +94,12 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h2>Скверы современного города</h2>
+                    <h2>Местные сообщества</h2>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
                         <div class="top">Как есть сейчас?</div>
-                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/1.jpg) no-repeat 50% 50% / cover;"></div>
+                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list2/1.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
@@ -110,7 +110,7 @@
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
                         <div class="top">Как в мире?</div>
-                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/2.jpg) no-repeat 50% 50% / cover;"></div>
+                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list2/2.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Развитое местное самоуправление – это неотъемлемая часть современной мировой столицы. Лондон и Токио являются конгломератами полуавтономых муниципалитетов с широкими полномочиями, Берлин и Париж делегируют значительную часть полномочий своим составляющим.</p>
 
@@ -123,8 +123,8 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
-                        <div class="top">Как есть сейчас?</div>
-                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/3.jpg) no-repeat 50% 50% / cover;"></div>
+                        <div class="top">Как будет?</div>
+                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list2/3.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
@@ -140,7 +140,7 @@
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
                         <div class="top">Как есть сейчас?</div>
-                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/1.jpg) no-repeat 50% 50% / cover;"></div>
+                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list3/1.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
@@ -151,7 +151,7 @@
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
                         <div class="top">Как в мире?</div>
-                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/2.jpg) no-repeat 50% 50% / cover;"></div>
+                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list3/2.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Развитое местное самоуправление – это неотъемлемая часть современной мировой столицы. Лондон и Токио являются конгломератами полуавтономых муниципалитетов с широкими полномочиями, Берлин и Париж делегируют значительную часть полномочий своим составляющим.</p>
 
@@ -164,8 +164,8 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
-                        <div class="top">Как есть сейчас?</div>
-                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/3.jpg) no-repeat 50% 50% / cover;"></div>
+                        <div class="top">Как будет?</div>
+                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list3/3.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
@@ -181,7 +181,7 @@
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
                         <div class="top">Как есть сейчас?</div>
-                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/1.jpg) no-repeat 50% 50% / cover;"></div>
+                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list4/1.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
@@ -192,7 +192,7 @@
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
                         <div class="top">Как в мире?</div>
-                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/2.jpg) no-repeat 50% 50% / cover;"></div>
+                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list4/2.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Развитое местное самоуправление – это неотъемлемая часть современной мировой столицы. Лондон и Токио являются конгломератами полуавтономых муниципалитетов с широкими полномочиями, Берлин и Париж делегируют значительную часть полномочий своим составляющим.</p>
 
@@ -205,8 +205,8 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="panel panel-v3">
-                        <div class="top">Как есть сейчас?</div>
-                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list1/3.jpg) no-repeat 50% 50% / cover;"></div>
+                        <div class="top">Как будет?</div>
+                        <div class="image" style="background: url(<?php echo get_template_directory_uri(); ?>/img/pages/todo/list4/3.jpg) no-repeat 50% 50% / cover;"></div>
                         <div class="bottom">
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
                             <p>Сегодня в Москве большинство важных городских решений принимается на уровне мэра, его заместителей или отраслевых министров. Зачастую эти решения не согласованы между собой, носят хаотичный характер и принимаются исходя из ситуативных обстоятельств...</p>
