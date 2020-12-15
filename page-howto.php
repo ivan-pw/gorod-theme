@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/img/pages/howto/1.jpg" />
+        <img class="w-100 mw-100" src="<?php echo get_template_directory_uri(); ?>/img/pages/howto/1.jpg" />
         <div class="container">
             <div class="row">
                 <div class="col-12 mt-5">

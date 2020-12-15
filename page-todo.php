@@ -47,7 +47,7 @@
             </div>
             <div class="row align-items-end">
                 <div class="col-12 col-md-4">
-                    <img class="float-right mb-5" src="<?php echo get_template_directory_uri(); ?>/img/pages/todo/todo2.jpg" />
+                    <img class="float-right mb-5 todo-img-2" src="<?php echo get_template_directory_uri(); ?>/img/pages/todo/todo2.jpg" />
                 </div>
                 <div class="col-12 col-md-6 offset-md-2">
                     <p>Если говорить конкретней, то речь идёт о территориальном развитии районов Москвы и благоустройстве, государственных сервисах в области образования, культуры, спорта и даже в здравоохранении. На том уровне, на котором это не навредит общей системе организации предоставления услуг в данных областях и может оптимально решаться именно на районном уровне.</p>

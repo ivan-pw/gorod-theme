@@ -929,3 +929,11 @@ ul.red {
     }
   }
 }
+
+.todo-img-2 {
+  max-width: 100%;
+
+  @include media-breakpoint-up(md) {
+    max-width: unset;
+  }
+}
